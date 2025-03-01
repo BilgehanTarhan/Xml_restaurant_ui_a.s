@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <!-- Üst Menü (Toolbar) -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#66FFCC"
+        android:padding="16dp">
+
+        <!-- Menü İkonu -->
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/menu"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <!-- Sepet İkonu -->
+        <ImageView
+            android:id="@+id/cart_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/cart"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+        <!-- Arama Çubuğu -->
+        <EditText
+            android:id="@+id/search_bar"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+
+
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toStartOf="@+id/cart_icon"
+            android:layout_toEndOf="@+id/menu_icon"
+            android:autoText="false"
+            android:drawableStart="@drawable/icon"
+            android:hint="Search for Restaurants"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <!-- Restoran Listesi -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp" />
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="309dp"
+        android:layout_height="226dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="40dp"
+
+        android:src="@drawable/illustration"></ImageView>
+
+    <ImageView
+        android:backgroundTint="@color/white"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:layout_marginTop="345dp"
+
+
+        android:src="@drawable/flight"
+
+        android:translationX="-250dp"></ImageView>
+
+    <TextView
+        android:layout_width="173dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="500dp"
+        android:text="Signed Up Saccesfully"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:translationX="-400dp"></TextView>
+
+    <Button
+        android:layout_width="323dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="600dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:backgroundTint="#64FCD9"
+        android:translationX="-665dp"></Button>
+
+
+</LinearLayout>
